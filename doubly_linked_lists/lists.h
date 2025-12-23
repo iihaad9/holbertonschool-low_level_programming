@@ -55,4 +55,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
  * @head: pointer to the head of the list
  */
 void free_dlistint(dlistint_t *head);
+/**
+ * get_dnodeint_at_index - returns the nth node of a dlistint_t list
+ * @head: pointer to the head of the list
+ * @index: index of the node, starting from 0
+ *
+ * Return: pointer to the node, or NULL if it does not exist
+ */
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 #endif
