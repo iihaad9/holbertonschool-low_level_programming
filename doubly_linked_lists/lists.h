@@ -79,4 +79,12 @@ int sum_dlistint(dlistint_t *head);
  * Return: address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+/**
+ * delete_dnodeint_at_index - deletes the node at index of a dlistint_t list
+ * @head: pointer to the head of the list
+ * @index: index of the node to delete
+ *
+ * Return: 1 if it succeeded, -1 if it failed
+ */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 #endif
