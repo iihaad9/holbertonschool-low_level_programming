@@ -34,4 +34,9 @@ void print_dog(struct dog *d);
  * Return: pointer to the new dog, or NULL if it fails
  */
 dog_t *new_dog(char *name, float age, char *owner);
+/**
+ * free_dog - frees a dog
+ * @d: pointer to dog_t structure
+ */
+void free_dog(dog_t *d);
 #endif
