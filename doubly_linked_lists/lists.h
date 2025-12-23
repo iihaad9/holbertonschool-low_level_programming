@@ -42,5 +42,12 @@ size_t dlistint_len(const dlistint_t *h);
  * Return: address of the new node, or NULL if it fails
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
-
+/**
+ * add_dnodeint_end - adds a new node at the end of a dlistint_t list
+ * @head: pointer to the head of the list
+ * @n: integer to store in the new node
+ *
+ * Return: address of the new node, or NULL if it fails
+ */
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 #endif
