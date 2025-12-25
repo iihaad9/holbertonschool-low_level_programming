@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - Hash function implementing the djb2 algorithm
- * @str: string used to generate hash value
+ * hash_djb2 - implements the djb2 hash function
+ * @str: string to hash
  *
  * Return: hash value
  */
@@ -12,7 +12,7 @@ int c;
 hash = 5381;
 while ((c = *str++))
 {
-hash = ((hash << 5) +hash) +c;
+hash = ((hash << 5) + hash) + c;
 }
 return (hash);
 }
